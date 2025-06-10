@@ -1,0 +1,91 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #44abff;
+    color: #000;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 280px;
+    max-width: 90vw;
+    text-align: center;
+}
+
+#userCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.user-card {
+    background: linear-gradient(to bottom, #fff, #e0e0e0);
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 15px 10px;
+    width: 100%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.user-card p {
+    margin: 5px 0;
+    flex: 1 1 100%;
+    min-width: 140px;
+    text-align: left;
+}
+
+@media (min-width: 600px) {
+    .user-card p {
+        flex: 1 1 22%;
+    }
+}
+
+@media (max-width: 599px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .user-card p {
+        flex: 1 1 100%;
+    }
+
+    button {
+        width: 90%;
+    }
+}
